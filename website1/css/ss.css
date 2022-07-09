@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+/* body {
+  background-image: url("assets/Decore.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  font-family: "Poppins", sans-serif;
+  /* color: #1b2f5a; */
+
+.main_div {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+/* Navigatin Bar */
+
+.logo {
+  font-size: 47px;
+  /* font-family: "Zen Tokyo Zoo", cursive; */
+  font-family: 'Smooch', cursive;
+  margin-top: 6px;
+  margin-left: 60px;
+}
+
+.main_nav {
+  width: 101%;
+  margin-left: -58px;
+  background-color: snow;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navigation_menu {
+  margin-left: 50%;
+  margin-top: -47px;
+  font-size: 17px;
+}
+
+.nav_ul1 {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+}
+
+.nav_a1 {
+  color: black;
+  text-decoration: none;
+}
+
+.nav_a1:hover{
+  color: #f87458;
+}
+
+.nav_li{
+  transition: 0.9s;
+}
+
+.nav_li:hover {
+  transform: translateY(-15px);
+  transition: 0.9s;
+}
+
+.part_1 {
+  display: flex;
+  margin-top: 50px;
+}
+
+.part1_bg {
+  margin-top: 1px;
+  width: 100%;
+  /* margin-left: 16%; */
+}
+.part1_info {
+  margin-top: 15%;
+}
+
+.title_1 {
+  font-size: 19px;
+  color: black;
+}
+
+.title_2 {
+  color: #f87458;
+}
+
+.activity {
+  display: flex;
+}
+
+.prt1_btn1 {
+  width: 33%;
+  padding: 10px;
+  border: 0px;
+  background-color: coral;
+  color: white;
+}
+
+.prt1_btn1:hover {
+  background-color: silver;
+  color: black;
+}
+
+.prt2 {
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+.prt2_h21 {
+  font-size: 27px;
+}
+
+.main_act {
+  /* border: 1px solid black; */
+  padding: 10px;
+  display: flex;
+  background-color: #dfdfdf;
+}
+
+.act_1 {
+  /* border: 1px solid black; */
+  width: 26%;
+background-color: white;
+  transition: 1.5s;
+}
+
+.act1_img {
+  width: 100%;
+}
+
+.act1_h31 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+i.fa-solid.fa-circle-dot {
+  font-size: 7px;
+}
+
+.act1_p1 {
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.act1_h41{
+  margin-left: 10px;
+  color: #675e5e;
+}
+
+.act2_img{
+  width: 100%;
+  height: 58%;
+}
+
+.act_2 {
+  /* border: 1px solid black; */
+  width: 26%;
+  margin-left: 10%;
+  background-color: white;
+  transition: 1.5s;
+}
+
+/* .act_3 {
+  border: 1px solid black;
+  width: 26%;
+}
+
+.act3_img {
+  width: 100%;
+} */
+
+.main_act2 {
+  /* border: 1px solid black; */
+  padding: 10px;
+  display: flex;
+  background-color: #dfdfdf;
+}
+
+.act_4 {
+  /* border: 1px solid black; */
+  width: 26%;
+  background-color: white;
+  transition: 1.5s;
+}
+
+.act4_img {
+  width: 100%;
+  height: 58%;
+}
+
+.act_5 {
+  /* border: 1px solid black; */
+  width: 26%;
+  margin-left: 10%;
+  background-color: white;
+  transition: 1.5s;
+}
+
+.act5_img {
+  width: 100%;
+  height: 58%;
+}
+
+.act_6 {
+  /* border: 1px solid black; */
+  width: 26%;
+  margin-left: 10%;
+  background-color: white;  
+  transition: 1.5s;
+}
+
+.act6_img {
+  width: 100%;
+  height: 58%;
+}
+
+.act_1:hover {
+  transform: scale(0.9);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.act_2:hover {
+  transform: scale(0.9);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.act_3:hover {
+  transform: scale(0.9);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.act_4:hover {
+  transform: scale(0.9);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.act_5:hover {
+  transform: scale(0.9);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.act_6:hover {
+  transform: scale(0.9);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+
+
+/* .dest_1 {
+  border: 1px solid black;
+  width: 22%;
+}
+
+.dest1_img {
+  width: 100%;
+} */
+
+

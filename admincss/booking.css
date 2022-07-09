@@ -1,0 +1,46 @@
+
+.body{
+    display: flex;
+}
+
+
+.section1{
+    background-color: rgb(183, 194, 253);
+    height: 830px;
+    width: 25%;
+    box-shadow: 20px;
+}
+
+.section1 h2{
+    padding: 10px;
+}
+
+.menu{
+    margin-right: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.section2{
+    background-color: rgb(255, 255, 255);
+    height: 830px;
+    width: 75%;
+    margin-left: 5px;
+}
+
+
+.add{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    background: rgb(110, 110, 187);
+}
+
+.section2 h2{
+    padding: 10px;
+}

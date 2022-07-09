@@ -1,0 +1,47 @@
+.body{
+    display: flex;
+}
+
+
+.section1{
+    background-color: rgb(66 90 239 / 80%);
+    height: 830px;
+    width: 25%;
+    /* box-shadow: 20px; */
+}
+
+.section1 h2{
+    padding: 10px;
+}
+
+.menu{
+    margin-right: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.section2{
+    background-color: rgb(255, 255, 255);
+    height: 830px;
+    width: 75%;
+    margin-left: 5px;
+}
+
+.totaluser{
+    height: 200px;
+    width: 200px;
+    margin-left: 30px;
+    padding: 7px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.section2 h2{
+    padding: 10px;
+}

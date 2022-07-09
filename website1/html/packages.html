@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+    .main_div {
+      padding-left: 50px;
+      padding-top: 10px;
+    
+
+    }
+
+    /* Navigatin Bar */
+
+    .logo {
+      font-size: 47px;
+      /* font-family: "Zen Tokyo Zoo", cursive; */
+      font-family: 'Smooch', cursive;
+      margin-top: 6px;
+      margin-left: 60px;
+    }
+
+    .main_nav {
+      width: 101%;
+      margin-left: -58px;
+      background-color: snow;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+    }
+
+    .navigation_menu {
+      margin-left: 63%;
+      margin-top: -47px;
+      font-size: 17px;
+    }
+
+    .nav_ul1 {
+      display: flex;
+      list-style: none;
+      gap: 45px;
+    }
+
+    .nav_a1 {
+      color: black;
+      text-decoration: none;
+    }
+
+    .nav_a1:hover {
+      color: #f87458;
+    }
+
+    .nav_li {
+      transition: 0.9s;
+    }
+
+    .nav_li:hover {
+      transform: translateY(-15px);
+      transition: 0.9s;
+    }
+
+    .main_act {
+      /* border: 1px solid black; */
+      padding: 10px;
+      display: flex;
+      background-color: #dfdfdf;
+    }
+
+    .act_1 {
+      /* border: 1px solid black; */
+      width: 26%;
+      background-color: white;
+      transition: 1.5s;
+      padding-bottom: 10px;
+    }
+
+    .act_1:hover {
+      transform: scale(1.1);
+      transition: 1.5s;
+      transition-delay: 0.5s;
+    }
+
+    .act1_img {
+      width: 100%;
+    }
+
+    .act1_h31 {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    i.fa-solid.fa-circle-dot {
+      font-size: 7px;
+    }
+
+    .act1_p1 {
+      margin-left: 10px;
+      font-size: 17px;
+    }
+
+    .act1_p1 {
+      margin-left: 10px;
+      /* color: #675e5e; */
+    }
+
+    .act2_img {
+      width: 100%;
+      height: 31%;
+    }
+
+    .act_2 {
+      /* border: 1px solid black; */
+      width: 26%;
+      margin-left: 10%;
+      background-color: white;
+      transition: 1.5s;
+    }
+
+    .act_2:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+
+    .act_3 {
+      /* border: 1px solid black; */
+      width: 26%;
+      margin-left: 10%;
+      background-color: white;
+      transition: 1.5s;
+    }
+
+    .act_3:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+
+    .act3_img {
+      width: 100%;
+    }
+
+    .inclusion {
+      display: flex;
+      font-size: 17px;
+      gap: 25px;
+      margin-left: 10px;
+      line-height: 25px;
+      margin-top: -22px;
+    }
+
+    i.fa-solid.fa-hotel {
+      margin-left: 10px;
+    }
+
+    i.fa-solid.fa-car {
+      margin-left: 19px;
+    }
+
+    i.fa-solid.fa-utensils {
+      margin-left: 10px;
+    }
+
+    .package1_p1 {
+      margin-left: 10px;
+    }
+
+    button.package1_btn {
+      width: 95%;
+      margin-left: 9px;
+      padding: 7px;
+      background-color: coral;
+      border: 0px;
+    }
+
+    .package1_btn:hover {
+      background-color: black;
+      color: black;
+    }
+
+    a.package1_a1 {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+    }
+
+    .main_act2 {
+      /* border: 1px solid black; */
+      padding: 10px;
+      display: flex;
+      background-color: #dfdfdf;
+    }
+
+    .act_4 {
+      /* border: 1px solid black; */
+      width: 26%;
+      background-color: white;
+      transition: 1.5s;
+    }
+
+    .act_4:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+
+    .act4_img {
+      width: 100%;
+      height: 31%;
+    }
+
+    .act_5 {
+      /* border: 1px solid black; */
+      width: 26%;
+      margin-left: 10%;
+      background-color: white;
+      transition: 1.5s;
+    }
+
+    .act_5:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+
+    .act5_img {
+      width: 100%;
+      height: 31%;
+    }
+
+    .act_6 {
+      /* border: 1px solid black; */
+      width: 26%;
+      margin-left: 10%;
+      background-color: white;
+      transition: 1.5s;
+    }
+
+    .act_6:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+
+    .act6_img {
+      width: 100%;
+      height: 31%;
+    }
+
+    .act_7 {
+      /* border: 1px solid black; */
+      width: 26%;
+      margin-left: 10%;
+      background-color: white;
+      transition: 1.5s;
+      padding-bottom: 2px;
+    }
+
+    .act_7:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+
+
+    .act7_img {
+      width: 100%;
+      height: 33%;
+    }
+
+    .footer {
+      border: 1px solid black;
+      margin-top: 5%;
+      margin-left: -50px;
+      background-color: black;
+      color: white;
+      padding-top: 5%;
+      padding-bottom: 6%;
+      padding-left: 15%;
+    }
+
+    .pn_2 {
+      margin-left: 22px;
+    }
+
+    .footer_p {
+      margin-left: 45%;
+      margin-top: -15%;
+    }
+
+    .footer_logo {
+      margin-left: 45%;
+      margin-top: 5%;
+    }
+
+    i.fa-brands.fa-instagram-square {
+      margin-left: 30px;
+    }
+
+    i.fa-brands.fa-twitter-square {
+      margin-left: 30px;
+    }
+
+    i.fa-brands.fa-linkedin {
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main_div">
+
+    <nav class="main_nav">
+      <div class="logo">Exploraholic</div>
+      <div class="navigation_menu">
+        <ul class="nav_ul1">
+          <li class="nav_li"><a href="../html/index.html" class="nav_a1">Home</a></li>
+
+            <li class="nav_li"><a href="../asp/package.asp" class="nav_a1">Packages</a></li>
+
+            <li class="nav_li"><a href="../html/bookform.html" class="nav_a1">Bookings</a></li>
+
+            <li class="nav_li"><a href="../html/about.html" class="nav_a1">About Us</a></li>
+
+            <li class="nav_li"><a href="../html/contact.html" class="nav_a1">Contact Us</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="prt2">
+
+      <h1 class="prt2_h11"> Activities </h1>
+
+      <div class="main_act">
+
+        <div class="act_1">
+
+          <img src="../assest/package1.jpg" class="act1_img">
+
+          <h3 class="act1_h31"> <u> Kashmir Weekend Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            03 Nights - 04 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.25,500
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            Create some lovely memories for your weekend by planning a visit to Kashmir. Also called Paradise on Earth,
+            it is blessed with heavenly beauty and a surreal landscape.
+          </p>
+
+          <button class="package1_btn">
+            <a href="../website1/booking/booking.html" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_2">
+
+          <img src="../website1/dest6.jpg" class="act2_img">
+
+          <h3 class="act1_h31"> <u> Maldives Adventure Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            04 Nights - 05 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.30,395
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            A perfect getaway destination that stands apart from all the island countries in the world is none other
+            than the Maldives.
+            <br><br>
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_3">
+
+          <img src="../website1/package3.jpg" class="act3_img">
+
+          <h3 class="act1_h31"> <u> Best of Sikkim Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            08 Nights - 09 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.45,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            This popular nine-day quality tour will show you the best of Sikkim attractions including Gangtok, Lachen,
+            Lachung and Pelling.
+            <br><br>
+
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="main_act2">
+
+        <div class="act_4">
+
+          <img src="../website1/package4.jpg" class="act4_img">
+
+          <h3 class="act1_h31"> <u> Nepal Temple Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            11 Nights - 12 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.65,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            There are hundreds of temple across the country, with Pashupatinath and Muktinath Temple being the most
+            famous of them.
+            <br><br>
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_5">
+
+          <img src="../website1/package5.jpg" class="act5_img">
+
+          <h3 class="act1_h31"> <u> Goa Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            10 Nights - 11 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.35,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            The coastal paradise, Goa is not unknown to anyone. This tiny state in West India is famous for its plethora
+            of beautiful beaches, great seafood, amazing nightlife, and thrilling watersports.
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_6">
+
+          <img src="../website1/dest1.jpg" class="act6_img">
+
+          <h3 class="act1_h31"> <u> Kullu Manali Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            12 Nights - 13 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.75,500
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            Kullu Manali is one of those exquisite destinations that are extremely popular among holiday enthusiasts
+            worldwide. It is one of the most popular hill station tourist destinations to visit in India.
+
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div class="main_act">
+
+        <div class="act_1">
+
+          <img src="../website1/package7.jpg" class="act1_img">
+
+          <h3 class="act1_h31"> <u> Delhi Nainital Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            04 Nights - 05 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.30,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            The Lake tour package takes you to the picturesque tourist attractions in Nainital. Explore the mesmerizing
+            beauty of the pristine lakes and majestic peaks surrounded by the forests and verdant landscapes.
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_7">
+
+          <img src="../website1/package8.jpg" class="act7_img">
+
+          <h3 class="act1_h31"> <u> Mahabalipuram Weekend Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            02 Nights - 03 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.20,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            Mahabalipuram, also known as Mamallapuram is a town in Kancheepuram district in the Indian state of Tamil
+            Nadu. It is around 60 km south from the city of Chennai.
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_3">
+
+          <img src="../website1/package9.jpg" class="act3_img">
+
+          <h3 class="act1_h31"> <u> Mysore Weekend Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            02 Nights - 03 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.10,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            The place is recognized as palace city of India and declared as a heritage city. The Amba Villas Palace
+            (popularly known as Mysore Palace) in the city is one of the mainly visited monument in India.
+
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="main_act2">
+
+        <div class="act_4">
+
+          <img src="../website1/package10.jpg" class="act4_img">
+
+          <h3 class="act1_h31"> <u> Meghalaya Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            06 Nights - 07 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.55,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            The north eastern part of India is blessed with oodles of natural splendors, and some of the best spots to
+            witness them are Kaziranga National Park and Meghalaya.
+            <br><br>
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_5">
+
+          <img src="../website1/package11.jpg" class="act5_img">
+
+          <h3 class="act1_h31"> <u> Mumbai Lonavala Weekend Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            02 Nights - 03 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.12,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            Lonavala is a popular hill station and a local getaway 110 km from Mumbai. Lies on the Mumbai-Pune
+            Expressway, the place is perfect for all those seeking for calm and peaceful place.
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+        <div class="act_6">
+
+          <img src="../website1/package12.jpg" class="act6_img">
+
+          <h3 class="act1_h31"> <u> Saputara Weekend Tour </u> </h3>
+
+          <p class="act1_p1"> <strong> Duration: </strong>
+            <br><br>
+            02 Nights - 03 Days
+            <br><br>
+
+            <strong>Price:</strong>
+            <br><br>
+
+            Rs.15,000
+          </p>
+
+          <p class="act1_p1"> <strong> Inclusions </strong> </p>
+
+          <div class="inclusion">
+            <p>
+              <i class="fa-solid fa-hotel"></i> <br> 3 Star
+            </p>
+
+            <p>
+              <i class="fa-solid fa-car"></i> <br> Transfer
+            </p>
+
+            <p>
+              <i class="fa-solid fa-utensils"></i><br> Meals
+            </p>
+
+          </div>
+
+          <p class="package1_p1">
+            Our Saputara Weekend Tour will give an opportunity to take pleasure of the scenic beauty and peaceful
+            ambience.
+            <br><br>
+
+          </p>
+
+          <button class="package1_btn">
+            <a href="#1" class="package1_a1">Book Now</a>
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="footer">
+
+        <footer class="footer_info">
+          <i class="fa-solid fa-location-dot"></i> 203, Mota Varachha Near VIP Circle , Surat.
+          <br><br><br><br>
+
+          <i class="fa-solid fa-phone"></i> +91 9586400538 <br>
+          <p class="pn_2"> +91 7874467710 </p>
+          <br><br>
+
+          <i class="fa-solid fa-envelope"></i> exploraholic@gmail.com
+
+          <h3 class="footer_p">Copyright © 2022 Exploraholic. All Rights Reserved. </h3>
+          <h1 class="footer_logo">
+            <i class="fa-brands fa-facebook-square"></i>
+
+
+            <i class="fa-brands fa-instagram-square"></i>
+
+
+            <i class="fa-brands fa-twitter-square"></i>
+
+
+            <i class="fa-brands fa-linkedin"></i>
+
+          </h1>
+
+        </footer>
+
+      </div>
+
+    </div>
+
+</body>
+
+</html>
